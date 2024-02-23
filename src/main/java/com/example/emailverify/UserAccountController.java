@@ -73,7 +73,7 @@ public class UserAccountController {
             mailMessage.setTo(userEntity.getEmpemail());
             mailMessage.setSubject("Complete Registration!");
             mailMessage.setText("To confirm your account, please click here : "
-                    + "http://localhost:8580/confirm-account?token=" + confirmationToken.getConfirmationToken());
+                    + "http://43.205.126.67:8190/confirm-account?token=" + confirmationToken.getConfirmationToken());
 
             emailService.sendEmail(mailMessage);
 
