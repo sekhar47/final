@@ -88,7 +88,7 @@ public class UserService {
     }
 
     private void sendResetLink(String email, String token) {
-        String resetLink = "http://localhost:8580/reset-password?token=" + token;
+        String resetLink = "http://43.205.126.67:8190/reset-password?token=" + token;
 
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(email);
